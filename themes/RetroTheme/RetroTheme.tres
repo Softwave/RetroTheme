@@ -1,0 +1,76 @@
+[gd_resource type="Theme" load_steps=17 format=3 uid="uid://rdfk07gc0y5k"]
+
+[ext_resource type="FontFile" uid="uid://bp0yfvip01s7o" path="res://themes/RetroTheme/fonts/ProggyClean.ttf" id="1_ec5pi"]
+[ext_resource type="Texture2D" uid="uid://dkqakyax3rgre" path="res://themes/RetroTheme/button/Button2.png" id="2_n6yfi"]
+[ext_resource type="Texture2D" uid="uid://b5qvp8rnb2b0c" path="res://themes/RetroTheme/button/Button3.png" id="3_nidxr"]
+[ext_resource type="Texture2D" uid="uid://ditxkfc4fq0ab" path="res://themes/RetroTheme/textedit/TextBoxIdle.png" id="4_6d1r4"]
+[ext_resource type="FontFile" uid="uid://t48ktj8o8stm" path="res://themes/RetroTheme/fonts/ProggyTiny.ttf" id="4_lrtfo"]
+[ext_resource type="Texture2D" uid="uid://cvpi213muc3gn" path="res://themes/RetroTheme/textedit/TextBoxSelected.png" id="4_nudf2"]
+[ext_resource type="Texture2D" uid="uid://cbr4hxa7fgo7u" path="res://themes/RetroTheme/button/ButtonPress.png" id="4_qyl1u"]
+[ext_resource type="Texture2D" uid="uid://nh3oy14ijird" path="res://themes/RetroTheme/textedit/TextBoxDisabled.png" id="5_t7r1r"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kjh0b"]
+texture = ExtResource("2_n6yfi")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mf3h3"]
+texture = ExtResource("3_nidxr")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3pa8x"]
+texture = ExtResource("4_qyl1u")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hgxea"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lk0go"]
+texture = ExtResource("4_nudf2")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_321mt"]
+texture = ExtResource("4_6d1r4")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y6wvj"]
+texture = ExtResource("5_t7r1r")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r8o6n"]
+bg_color = Color(0.843183, 0.811917, 0.721538, 1)
+
+[resource]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/font_sizes/font_size = 16
+Button/fonts/font = ExtResource("1_ec5pi")
+Button/styles/hover = SubResource("StyleBoxTexture_kjh0b")
+Button/styles/normal = SubResource("StyleBoxTexture_mf3h3")
+Button/styles/pressed = SubResource("StyleBoxTexture_3pa8x")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/fonts/font = ExtResource("4_lrtfo")
+Label/styles/normal = SubResource("StyleBoxFlat_hgxea")
+LineEdit/colors/caret_color = Color(0, 0, 0, 1)
+LineEdit/colors/font_color = Color(0, 0, 0, 1)
+LineEdit/fonts/font = ExtResource("4_lrtfo")
+LineEdit/styles/focus = SubResource("StyleBoxTexture_lk0go")
+LineEdit/styles/normal = SubResource("StyleBoxTexture_321mt")
+LineEdit/styles/read_only = SubResource("StyleBoxTexture_y6wvj")
+Panel/styles/panel = SubResource("StyleBoxFlat_r8o6n")
