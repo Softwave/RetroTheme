@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://bl5ewrbngt30y"
+path="res://.godot/imported/cozette_hidpi.fnt-7df289489167c2ad8e28cd0e726d26fa.fontdata"
+
+[deps]
+
+source_file="res://themes/RetroTheme/fonts/cozette_hidpi.fnt"
+dest_files=["res://.godot/imported/cozette_hidpi.fnt-7df289489167c2ad8e28cd0e726d26fa.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2
