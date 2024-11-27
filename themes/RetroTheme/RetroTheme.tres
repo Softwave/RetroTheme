@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=47 format=3 uid="uid://rdfk07gc0y5k"]
+[gd_resource type="Theme" load_steps=50 format=3 uid="uid://rdfk07gc0y5k"]
 
 [ext_resource type="FontFile" uid="uid://bp0yfvip01s7o" path="res://themes/RetroTheme/fonts/ProggyClean.ttf" id="1_ec5pi"]
 [ext_resource type="Texture2D" uid="uid://dkqakyax3rgre" path="res://themes/RetroTheme/button/Button2.png" id="2_n6yfi"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://begabt5j1q183" path="res://themes/RetroTheme/slider/SliderHazy.png" id="8_lc6ig"]
 [ext_resource type="Texture2D" uid="uid://btmrww2l6cvpe" path="res://themes/RetroTheme/optionbutton/tinyArrow.png" id="9_ad2ou"]
 [ext_resource type="Texture2D" uid="uid://chwuv42yuynei" path="res://themes/RetroTheme/separator/Separator.png" id="10_wa6oj"]
+[ext_resource type="Texture2D" uid="uid://dpd27eisqp17b" path="res://themes/RetroTheme/spinner/SpinnerArrow.png" id="18_i8hvv"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uafbu"]
 texture = ExtResource("2_n6yfi")
@@ -49,17 +50,18 @@ texture_margin_top = 6.0
 texture_margin_right = 6.0
 texture_margin_bottom = 6.0
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wniwf"]
-texture_margin_left = 6.0
-texture_margin_top = 6.0
-texture_margin_right = 6.0
-texture_margin_bottom = 6.0
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ntud6"]
+bg_color = Color(0.843183, 0.811917, 0.721538, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kjrrg"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_05shj"]
+bg_color = Color(0.843183, 0.811917, 0.721538, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tb6e"]
-bg_color = Color(0.843137, 0.811765, 0.721569, 0)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6pfxy"]
+bg_color = Color(0.843183, 0.811917, 0.721538, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yowaq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qjyph"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u7itn"]
 texture = ExtResource("8_1afg7")
@@ -204,7 +206,9 @@ Button/styles/normal = SubResource("StyleBoxTexture_mf3h3")
 Button/styles/pressed = SubResource("StyleBoxTexture_3pa8x")
 CheckBox/icons/checked = ExtResource("4_2ka4p")
 CheckBox/icons/unchecked = ExtResource("5_2uu4h")
-CheckBox/styles/normal = SubResource("StyleBoxTexture_wniwf")
+CheckBox/styles/hover = SubResource("StyleBoxFlat_ntud6")
+CheckBox/styles/normal = SubResource("StyleBoxFlat_05shj")
+CheckBox/styles/pressed = SubResource("StyleBoxFlat_6pfxy")
 CodeEdit/colors/background_color = Color(0, 0, 0, 1)
 CodeEdit/colors/caret_color = Color(0.662745, 0.647059, 0.666667, 1)
 CodeEdit/colors/code_folding_color = Color(0.905882, 0.572549, 0.423529, 1)
@@ -219,8 +223,8 @@ CodeEdit/fonts/font = ExtResource("4_3fq71")
 HSlider/icons/grabber = ExtResource("7_ktonf")
 HSlider/icons/grabber_disabled = ExtResource("7_ktonf")
 HSlider/icons/grabber_highlight = ExtResource("8_lc6ig")
-HSlider/styles/grabber_area = SubResource("StyleBoxFlat_kjrrg")
-HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_5tb6e")
+HSlider/styles/grabber_area = SubResource("StyleBoxEmpty_yowaq")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxEmpty_qjyph")
 HSlider/styles/slider = SubResource("StyleBoxTexture_u7itn")
 Label/colors/font_color = Color(0, 0, 0, 1)
 Label/fonts/font = ExtResource("4_lrtfo")
@@ -230,7 +234,7 @@ LineEdit/colors/font_color = Color(0, 0, 0, 1)
 LineEdit/colors/font_selected_color = Color(1, 1, 1, 1)
 LineEdit/colors/font_uneditable_color = Color(0, 0, 0, 0.5)
 LineEdit/colors/selection_color = Color(0, 0.501961, 0.501961, 1)
-LineEdit/fonts/font = ExtResource("4_lrtfo")
+LineEdit/fonts/font = ExtResource("1_ec5pi")
 LineEdit/styles/focus = SubResource("StyleBoxTexture_lk0go")
 LineEdit/styles/normal = SubResource("StyleBoxTexture_321mt")
 LineEdit/styles/read_only = SubResource("StyleBoxTexture_y6wvj")
@@ -255,6 +259,7 @@ PopupMenu/styles/labeled_separator_left = SubResource("StyleBoxTexture_i3ggm")
 PopupMenu/styles/labeled_separator_right = SubResource("StyleBoxTexture_3ae0t")
 PopupMenu/styles/panel = SubResource("StyleBoxTexture_olo8a")
 PopupMenu/styles/separator = SubResource("StyleBoxTexture_hjtsk")
+SpinBox/icons/updown = ExtResource("18_i8hvv")
 TextEdit/styles/focus = null
 TextEdit/styles/normal = SubResource("StyleBoxTexture_k2p6i")
 TextEdit/styles/read_only = SubResource("StyleBoxTexture_5dlea")
