@@ -1,15 +1,20 @@
-[gd_resource type="Theme" load_steps=38 format=3 uid="uid://rdfk07gc0y5k"]
+[gd_resource type="Theme" load_steps=47 format=3 uid="uid://rdfk07gc0y5k"]
 
 [ext_resource type="FontFile" uid="uid://bp0yfvip01s7o" path="res://themes/RetroTheme/fonts/ProggyClean.ttf" id="1_ec5pi"]
 [ext_resource type="Texture2D" uid="uid://dkqakyax3rgre" path="res://themes/RetroTheme/button/Button2.png" id="2_n6yfi"]
+[ext_resource type="Texture2D" uid="uid://nfn5tcvushf" path="res://themes/RetroTheme/checkbox/CheckboxChecked.png" id="4_2ka4p"]
 [ext_resource type="FontFile" uid="uid://cih7po6k2scml" path="res://themes/RetroTheme/fonts/pico-8.ttf" id="4_3fq71"]
 [ext_resource type="Texture2D" uid="uid://ditxkfc4fq0ab" path="res://themes/RetroTheme/textedit/TextBoxIdle.png" id="4_6d1r4"]
 [ext_resource type="FontFile" uid="uid://t48ktj8o8stm" path="res://themes/RetroTheme/fonts/ProggyTiny.ttf" id="4_lrtfo"]
 [ext_resource type="Texture2D" uid="uid://cvpi213muc3gn" path="res://themes/RetroTheme/textedit/TextBoxSelected.png" id="4_nudf2"]
 [ext_resource type="Texture2D" uid="uid://cbr4hxa7fgo7u" path="res://themes/RetroTheme/button/ButtonPress.png" id="4_qyl1u"]
+[ext_resource type="Texture2D" uid="uid://cs11387iusk71" path="res://themes/RetroTheme/checkbox/CheckboxUnChecked.png" id="5_2uu4h"]
 [ext_resource type="Texture2D" uid="uid://nh3oy14ijird" path="res://themes/RetroTheme/textedit/TextBoxDisabled.png" id="7_brli2"]
 [ext_resource type="Texture2D" uid="uid://d3yxy380o4med" path="res://themes/RetroTheme/button/Button.png" id="7_gidij"]
+[ext_resource type="Texture2D" uid="uid://b4voxpuyrkiuv" path="res://themes/RetroTheme/slider/SliderHandle.png" id="7_ktonf"]
 [ext_resource type="Texture2D" uid="uid://5rcjh77c50ig" path="res://themes/RetroTheme/button/ButtonHover.png" id="7_yhfrc"]
+[ext_resource type="Texture2D" uid="uid://bqrt11op4vk8k" path="res://themes/RetroTheme/slider/SliderBG.png" id="8_1afg7"]
+[ext_resource type="Texture2D" uid="uid://begabt5j1q183" path="res://themes/RetroTheme/slider/SliderHazy.png" id="8_lc6ig"]
 [ext_resource type="Texture2D" uid="uid://btmrww2l6cvpe" path="res://themes/RetroTheme/optionbutton/tinyArrow.png" id="9_ad2ou"]
 [ext_resource type="Texture2D" uid="uid://chwuv42yuynei" path="res://themes/RetroTheme/separator/Separator.png" id="10_wa6oj"]
 
@@ -43,6 +48,25 @@ texture_margin_left = 6.0
 texture_margin_top = 6.0
 texture_margin_right = 6.0
 texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wniwf"]
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kjrrg"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tb6e"]
+bg_color = Color(0.843137, 0.811765, 0.721569, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u7itn"]
+texture = ExtResource("8_1afg7")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hgxea"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -178,6 +202,9 @@ Button/styles/focus = SubResource("StyleBoxFlat_t4lhp")
 Button/styles/hover = SubResource("StyleBoxTexture_kjh0b")
 Button/styles/normal = SubResource("StyleBoxTexture_mf3h3")
 Button/styles/pressed = SubResource("StyleBoxTexture_3pa8x")
+CheckBox/icons/checked = ExtResource("4_2ka4p")
+CheckBox/icons/unchecked = ExtResource("5_2uu4h")
+CheckBox/styles/normal = SubResource("StyleBoxTexture_wniwf")
 CodeEdit/colors/background_color = Color(0, 0, 0, 1)
 CodeEdit/colors/caret_color = Color(0.662745, 0.647059, 0.666667, 1)
 CodeEdit/colors/code_folding_color = Color(0.905882, 0.572549, 0.423529, 1)
@@ -189,6 +216,12 @@ CodeEdit/constants/caret_width = 7
 CodeEdit/constants/completion_lines = 7
 CodeEdit/font_sizes/font_size = 13
 CodeEdit/fonts/font = ExtResource("4_3fq71")
+HSlider/icons/grabber = ExtResource("7_ktonf")
+HSlider/icons/grabber_disabled = ExtResource("7_ktonf")
+HSlider/icons/grabber_highlight = ExtResource("8_lc6ig")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_kjrrg")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_5tb6e")
+HSlider/styles/slider = SubResource("StyleBoxTexture_u7itn")
 Label/colors/font_color = Color(0, 0, 0, 1)
 Label/fonts/font = ExtResource("4_lrtfo")
 Label/styles/normal = SubResource("StyleBoxFlat_hgxea")
